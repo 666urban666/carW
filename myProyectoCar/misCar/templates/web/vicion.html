@@ -1,0 +1,18 @@
+{% extends 'web/base.html'%}
+{% load static %}
+{% block contenido %}
+<Section class="Vicion">
+    <h2>Nuestra vision</h2>
+    
+    
+</Section>
+<section class="Info"> 
+    <p>{% for item in lista_mision %}
+    <h4>{{item.nombre}}</h4>
+    <p>
+        {{item.descripcion}} 
+    </p>
+    {% endfor %}
+</section>
+
+{% endblock %}

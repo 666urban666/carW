@@ -1,0 +1,67 @@
+@media screen and (min-width:750px){
+    
+    .GaleriaImg{
+        text-align: center;
+        width: 100%;
+        height: 50%;
+        font-family: 'Dancing Script';
+        margin: auto;
+       
+    }
+    
+    .GaleriaImg img {
+        width: 20%;
+        height: 30%;
+    }
+    
+    .GaleriaImg img:hover {
+        border-radius: 10px;
+        border: solid 4px red;
+    }
+
+    .formu{
+        width: 100%;
+        
+    }
+    .formubloque{
+        margin: 0 25% 0 35%;
+        width: 30%;
+        text-align: center;
+        align-content: center;
+    }
+}
+    
+@media screen and (max-width:750px) {
+        
+    .GaleriaImg{
+        float: left;
+        text-align: center;
+        width: 100%;
+        height: 50%;
+        font-family: 'Dancing Script';
+        color: white;
+        margin: auto;
+    }
+        
+    .GaleriaImg img {
+        
+        width: 20%;
+        height: 30%;
+    }
+        
+    .GaleriaImg img:hover {
+        border-radius: 10px;
+        border: solid 4px red;
+    }
+        
+    .formu{
+        width: 100%;
+        
+    }
+    .formubloque{
+        margin: 0 25% 0 35%;
+        width: 30%;
+        text-align: center;
+        align-content: center;
+    }   
+}

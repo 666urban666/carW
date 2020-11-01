@@ -1,0 +1,46 @@
+{% extends 'web/base.html'%}
+{% load static %}
+{% block contenido %}
+
+        <div class="seccion">
+            
+            
+            <form action="" method="Post" id="form" enctype="multipart/form-data" > 
+            {% csrf_token %}
+                <h3>Formulario de registro</h3>
+                <div class="formu">
+                    <div class="formubloque uno">
+                        <div class="grupo">
+                            <input type="text" name="txtNombre" id="txtNombre" required><span class="barra"></span>
+                            <label for="">Nombre</label>
+                        </div>
+                        <div class="grupo">
+                            <input type="number" name="txtvalor" id="txtvalor" min="1" required><span class="barra"></span>
+                            <label for="">Valor unitario</label>
+                        </div>
+                    </div>
+    
+                    <div class="formubloque dos">
+                        <div class="grupo">
+                            <textarea type="text" name="txtDescripcion" id="txtDescripcion" cols="30" rows="10" minlength="3" maxlength="200"></textarea>
+                            <label for="">Descripcion</label>
+                        </div>
+                        <div class="grupo">
+                            <input type="number" name="txtStock" id="txtStock" min="1" required><span class="barra"></span>
+                            <label for="">Stock</label>
+                        </div>
+                        <div class="grupo">
+                            <input type="file" name="flImagen" id="flImagen" min="1" required><span class="barra"></span>
+                            <label for=""></label>
+                        </div>
+                        <button class="regi" type="submit" >Enviar</button>
+                    </div>
+                </div>
+            </form>
+            <div style="text-align: center; color: darkgray;"> 
+        <h2>{{mensaje}}</h2>
+        </div>
+        </div>
+        
+
+{% endblock %}

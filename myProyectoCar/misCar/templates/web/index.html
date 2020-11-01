@@ -1,0 +1,53 @@
+
+
+{% extends 'web/base.html'%}
+{% load static %}
+{% block contenido %}
+<Div class="carrusel">
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <h1 class="center-align titulo">Nuestros locales por chile</h1>
+                
+                <div class="carousel center-align">
+                {% for item in lista_slider %}
+                    <div class="carousel-item">
+                        <h2 class="subtitulo">{{item.subtitulos}}</h2>
+                        <div class="linea-division"></div>
+                        <p class="sabor">{{item.titulo}}</p>
+                        <img src="{{item.imagen.url}}" alt="">
+                    </div>
+                {% endfor %}
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</Div>
+
+<div class="Servicios "  >
+    <div class="cosas">
+        <h4 >Tipos de servicios</h4>
+        <img src="{% static 'core/Imagenes/Tipos de lavado.png'%}" >
+    </div>
+    <div class="cosas">
+        <h4>Clientes</h4>
+        <article class="Aim">
+            <img src="{% static 'core/Imagenes/persona.jpg'%}" >
+            <h6>Armando Mesas</h6>
+            <p class="Text">La atención por parte del personal es muy buena, a su vez con su disposicion a ayudar a uno.</p>
+        </article>
+        <article class="Aim">
+            <img src="{% static 'core/Imagenes/persona.jpg'%}" >
+            <h6>Armando esteban quito</h6>
+            <p class="Text">Los precios por los servicios son super accesibles </p>
+        </article>
+        <article class="Aim">
+            <img src="{% static 'core/Imagenes/persona.jpg'%}" >
+            <h6>Antonio Martinez</h6>
+             <p class="Text">Muy barato los precios y recomendable el servicio, me dejaron el auto super bien 10/10</p>
+        </article>
+    </div>
+
+</div>
+{% endblock %}

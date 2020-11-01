@@ -1,0 +1,93 @@
+
+.Head{
+    height: 7%;
+    width: 100%;
+    float: center;
+}
+
+.Cabecera{
+    width: 50%;
+    float: left;
+    height: 100%;
+    margin: 0px;
+}
+.Cabecera2{
+    width: 50%;
+    background: transparent;
+    float: right;
+    
+}
+.Cabecera2 li{
+    text-decoration: none;
+    display: block;
+
+}
+.Cabecera h1{
+    height: 30%;
+    background-position: center;
+    text-orientation: initial;
+    margin: 10px 10px;
+}
+
+/*footer*/
+@media screen and (min-width:750px){
+.Pie{
+    height: 13%;
+    margin: auto;
+    background-image: linear-gradient(-45deg, #30616e7e 50%, #6464649a 50%);
+    font-family: 'Dancing Script', cursive; 
+    font-size: 20px;
+}
+
+.Contactos{
+    width: 50%;
+    float: left;
+    height: 100%;
+    
+}
+.Contactos div{
+    margin: 0px 0px 0px 10px;
+}
+
+
+.Creadores{
+    width: 50%;
+    float: left;
+    height: 100%;
+}
+.Creadores div{
+    text-align: right;
+   position: relative;
+   margin: 0px 10px 5px 0px;
+}
+}
+
+@media screen and (max-width:750px){
+    .Pie{
+        height: 13%;
+        margin: auto;
+        background-image: linear-gradient(0deg, #30616e7e 50%, #6464649a 50%);
+        font-family: 'Dancing Script', cursive; 
+        font-size: 15px;
+    }
+    
+    .Contactos{
+        width: 100%;
+        height: 50%;
+        text-align: center;
+    }
+    .Contactos div{
+        margin: 0px 0px 0px 10px;
+    }
+    
+    
+    .Creadores{
+        width: 100%;
+        height: 50%;
+    }
+    .Creadores div{
+        text-align: center;
+       position: relative;
+       margin: 0px 10px 5px 0px;
+    }
+}

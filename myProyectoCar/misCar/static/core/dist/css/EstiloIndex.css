@@ -1,0 +1,274 @@
+@media screen and (min-width:750px){
+body { 
+    min-height: 100vh;
+    width: auto;
+    background-image: url('../Imagenes/new-fondo1lateral.jpg'  );
+    font-family: 'Raleway', sans-serif;
+    height: 1250px;
+    
+        
+}
+.titulo {
+    font-size: 40px;
+    font-family: 'Dancing Script', cursive;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.subtitulo {
+    margin: 0;
+    color: darkblue;
+    
+    display: inline;
+    font-size: 50px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.sabor { 
+    color: #fff;
+    margin: 7px 0;
+    font-size: 50px;
+    font-weight: 600;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+    font-family: 'Dancing Script', cursive;
+    margin-top: 0;
+}
+
+.linea-division {
+    width: 80%;
+    height: 2px;
+    background-color: #36221c;
+}
+
+/* ------------------------- */
+/* Estilos de Materialize */
+/* ------------------------- */
+.carousel {
+    min-height: 500px;
+}
+
+.carousel .carousel-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    width: 500px;
+    height: 500px;
+}
+
+.carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.carousel .indicators .indicator-item {
+    border-radius: 0;
+    transform: rotate(45deg);
+    margin: 0px 15px 10px ;
+    background: #33197ad0;
+    
+}
+
+.menu{
+    float: right;
+    margin: 30px 10px 0px 0px;
+    color: lavender;
+    background: transparent;
+    
+}
+
+.Nav{
+    height: 80%;
+    width: auto;
+    float: center;
+    font-family: 'Dancing Script', cursive; 
+    color: white;
+}
+.carrusel{
+    height: 60%;
+    
+    width: 100%;
+}
+
+
+
+.Servicios img{
+    width: 80%;
+    height: auto;
+}
+
+.Comentarios {
+    text-decoration: none;
+    text-align: center;
+    
+}
+
+.menu1 {
+    text-decoration: none;
+    float: right;
+}
+
+
+.cosas{
+    width: 50%;
+    height: 40%;
+    float: left;
+    margin: 0px;
+}
+
+.cosas img{
+    width: 100%;
+    max-height: 290px;
+}
+
+.Aim{
+    width: 30%;
+    float: left;
+    height: 100%;
+    font-size: 100%;
+    margin: 0px 5px;
+}
+}
+
+@media screen and (max-width:750px){
+    body { 
+        min-height: 100vh;
+        width: auto;
+        background-image: url('../Imagenes/new-fondo1lateral.jpg'  );
+        font-family: 'Raleway', sans-serif;
+        height: 1650px;
+        
+            
+    }
+    .titulo {
+        font-size: 40px;
+        font-family: 'Dancing Script', cursive;
+        margin-bottom: 40px;
+        color: #fff;
+    }
+    
+    .subtitulo {
+        margin: 0;
+        color: darkblue;
+        display: inline;
+        font-size: 37px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+    
+    .sabor { 
+        color: #fff;
+        margin: 7px 0;
+        font-size: 40px;
+        font-weight: 600;
+        text-shadow: 2px 2px 1px rgba(0,0,0,0.7);
+        font-family: 'Dancing Script', cursive;
+        margin-top: 0;
+    }
+    
+    .linea-division {
+        width: 80%;
+        height: 2px;
+        background-color: #36221c;
+    }
+    
+    /* ------------------------- */
+    /* Estilos de Materialize */
+    /* ------------------------- */
+    .carousel {
+        min-height: 500px;
+    }
+    
+    .carousel .carousel-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        user-select: none;
+        width: 500px;
+        height: 500px;
+    }
+    
+    .carousel .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        border-radius: 15px;
+    }
+    
+    .carousel .indicators .indicator-item {
+        border-radius: 0;
+        transform: rotate(45deg);
+        margin: 0px 15px 10px ;
+        background: #33197ad0;
+        
+    }
+    
+    .menu{
+        float: right;
+        margin: 30px 10px 0px 0px;
+        color: lavender;
+        background: transparent;
+        
+    }
+    
+    .Nav{
+        height: 80%;
+        width: auto;
+        float: center;
+        font-family: 'Dancing Script', cursive; 
+        color: white;
+    }
+    .carrusel{
+        height: 50%;
+        width: 100%;
+    }
+    
+    .Comentarios {
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    .menu1 {
+        text-decoration: none;
+        float: right;
+    }
+    
+    .Servicios{
+        height: 43%;
+        
+    }
+    .cosas{
+        width: 100%;
+        height: 50%;
+        float: center;
+        margin: 0px 0px 0px 0px;
+        text-align: center;
+        
+    }
+    
+    .cosas img{
+        width: 70%;
+        max-height: 200px;
+    }
+    
+    .Aim{
+        width: 30%;
+        float: left;
+        height: 100%;
+        font-size: 100%;
+        margin: 0px 5px;
+    }
+}

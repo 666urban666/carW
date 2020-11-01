@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+{%load static%}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="{%static 'core/CSS/estilo3.css'%}">
+    
+</head>
+<body>
+    <div class="nav">
+        <div class="seccion">
+            
+            
+            <form action="{%url 'login'%}" method="Post" id="form" enctype="multipart/form-data" > 
+            {% csrf_token %}
+                <h3>Login de acceso</h3>
+                <div class="formu">
+                    <div class="formubloque uno">
+                        <div class="grupo">
+                            <input type="text" name="txtNombreUser" id="txtNombreUser" required><span class="barra"></span>
+                            <label for="">Ingrese nombre de usuario</label>
+                        </div>
+                        <div class="grupo">
+                            <input type="password" name="txtContrasenaUser" id="txtContrasenaUser" min="1" required><span class="barra"></span>
+                            <label for="">Contraseña</label>
+                        </div>
+                        <button class="regi" type="submit" >Enviar</button>
+                    </div>
+                    
+                        
+                    
+                </div>
+            </form>
+            
+        </div>
+
+    </div>
+    <section>
+        <div style="text-align: center; color: darkgray; font-size: 25px;">
+            {{msg}}
+        </div>
+    </section>    
+</body>
+</html>
